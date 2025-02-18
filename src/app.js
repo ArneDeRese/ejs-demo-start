@@ -1,13 +1,17 @@
 // import statements
 import express from "express";
 import path from "path";
+import expressLayouts from "express-ejs-layouts"; 
 
 import { home, about, contact, privacy } from "./controllers/PageController.js";
 
 // create an instance of express
 const app = express();
 
+app.use(expressLayouts)
+
 app.set("view engine", "ejs")
+app.set("layout", "layouts/main")
 app.set("views", path.resolve("src", "views"))
 
 // serve static files from the public folder
