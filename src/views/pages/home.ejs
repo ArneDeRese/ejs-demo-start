@@ -15,5 +15,10 @@
   <p>
     <%= message %>
   </p>
+  <nav>
+    <% navItems.forEach(item => {%>
+      <a href="<%= item.url %>"><%= item.label %></a>
+    <%}); %>
+  </nav>
 </body>
 </html>
