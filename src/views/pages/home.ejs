@@ -9,16 +9,13 @@
   <title>Mijn eerste EJS applicatie</title>
 </head>
 <body>
+  <%- include('../partials/nav') %>
   <h1>
    <%= title %>
   </h1>
   <p>
     <%= message %>
   </p>
-  <nav>
-    <% navItems.forEach(item => {%>
-      <a href="<%= item.url %>"><%= item.label %></a>
-    <%}); %>
-  </nav>
+ <%- include('../partials/footer') %>
 </body>
 </html>
