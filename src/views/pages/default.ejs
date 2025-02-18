@@ -15,5 +15,16 @@
   <p>
     <%= message %>
   </p>
+  <hr>
+  <% if (team) {%>
+    <h3>Teamleden komen hier</h3>
+    <ul>
+      <% team.forEach(dino => { %>
+        <li>
+          <%- dino  %>
+        </li>
+      <% }); %>
+    </ul>
+  <% } %>
 </body>
 </html>
