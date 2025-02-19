@@ -1,0 +1,7 @@
+<% dinosaurs.forEach(dino => {%>
+    <ul class="dinos">
+    <li><%= dino.name %></li>
+    <li><img src="<%=dino.image %>" alt="<%= dino.name %>"></li>
+    <li><%= dino.description %></li>
+    </ul>
+  <%}); %>
