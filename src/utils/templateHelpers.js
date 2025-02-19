@@ -9,6 +9,12 @@ const helpers = {
               ${inp}
           </span>`;
     },
+    emojify: function (inp) {
+
+    },
+    button: function(inp) {
+        return `<button class= button>${inp}<button>`
+    }
   };
   
   export default helpers;

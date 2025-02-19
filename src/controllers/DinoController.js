@@ -13,7 +13,7 @@ export const detail = (req, res) => {
     if (!dino) {
       res.status(404).render("errors/404", {
         layout: "layouts/error",
-        message: "Dinosaur Not Found",
+        message: "Dinosaur is extint",
       });
     }
   
